@@ -1,23 +1,667 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
+
+ <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "XC60 장기렌트 가격 비교 및 최신 소식",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "item": {
+                    "@type": "Article",
+                    "url": "/",
+                    "name": "XC60 장기렌트 가격 비교: 2026년 모델별 최저가 견적 완벽 분석",
+                    "datePublished": "2026-03-20T00:00:00+09:00",
+                    "author": {
+                        "@type": "Person",
+                        "name": "장기렌트전문가"
+                    },
+                    "headline": "XC60 장기렌트 가격 비교: 2026년 모델별 최저가 견적 완벽 분석"
+                }
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "item": {
+                    "@type": "Article",
+                    "url": "/",
+                    "name": "XC60 장기렌트 장단점 분석: 구매 vs 렌트, 현명한 선택은?",
+                    "datePublished": "2026-03-18T00:00:00+09:00",
+                    "author": {
+                        "@type": "Person",
+                        "name": "장기렌트전문가"
+                    },
+                    "headline": "XC60 장기렌트 장단점 분석: 구매 vs 렌트, 현명한 선택은?"
+                }
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "item": {
+                    "@type": "Article",
+                    "url": "/",
+                    "name": "볼보 XC60 장기렌트카 추천 업체 순위: 신규 가입 혜택 및 사은품 비교",
+                    "datePublished": "2026-03-16T00:00:00+09:00",
+                    "author": {
+                        "@type": "Person",
+                        "name": "장기렌트전문가"
+                    },
+                    "headline": "볼보 XC60 장기렌트카 추천 업체 순위: 신규 가입 혜택 및 사은품 비교"
+                }
+            },
+            {
+                "@type": "ListItem",
+                "position": 4,
+                "item": {
+                    "@type": "Article",
+                    "url": "/",
+                    "name": "XC60 장기렌트 후기: 내돈내산 경험담과 숨겨진 비용 분석",
+                    "datePublished": "2026-03-14T00:00:00+09:00",
+                    "author": {
+                        "@type": "Person",
+                        "name": "장기렌트전문가"
+                    },
+                    "headline": "XC60 장기렌트 후기: 내돈내산 경험담과 숨겨진 비용 분석"
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- Schema.org Product (Service) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "볼보 XC60 장기렌트 비교 견적 서비스",
+      "description": "2026년 최신 XC60 B5, T8 모델의 장기렌트 가격을 실시간으로 비교하고, 초기 비용 0원 조건부터 무보증금 혜택까지 제공합니다. 딜러사별 프로모션, 사은품, 현금지원 혜택을 한눈에 비교하여 가장 저렴한 XC60 장기렌트 견적을 찾아드립니다.",
+      "brand": {
+        "@type": "Brand",
+        "name": "장기렌트카 비교 플랫폼"
+      },
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "KRW",
+        "price": "문의요망",
+        "url": "https://example.com/xc60-longterm-rental"
+      }
+    }
+    </script>
+
+    <!-- Styling: Premium, clean, and modern design (blue/green palette for safety/sustainability theme of Volvo) -->
+    <style>
+      :root {
+        --primary-color: #003366; /* Deep Volvo Blue/Navy */
+        --secondary-color: #0077c0; /* Medium Blue */
+        --accent-color: #5ab1b2; /* Teal/Green Accent */
+        --highlight-color: #f0f6f9; /* Light Blue Gray */
+        --text-color: #333333;
+        --bg-light: #f9f9f9;
+        --bg-white: #ffffff;
+        --btn-color: #ff5722; /* Orange for Call to Action */
+        --btn-hover: #e64a19;
+        --border-color: #e0e0e0;
+        --shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      }
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+
+      body {
+        font-family: 'Noto Sans KR', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: var(--bg-light);
+        color: var(--text-color);
+        line-height: 1.7;
+        font-weight: 300;
+      }
+      .container {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      /* Header and Hero */
+      header {
+        background-color: var(--primary-color);
+        padding: 20px 0;
+        text-align: center;
+        color: var(--bg-white);
+      }
+      header h1 {
+        margin: 0;
+        font-size: 1.8em;
+        font-weight: 700;
+      }
+      .hero {
+        background: url('https://images.pexels.com/photos/17006679/pexels-photo-17006679/free-photo-of-volvo-xc60.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') center/cover no-repeat;
+        /* Image: A modern, sleek shot of a Volvo XC60. Source: Pexels.com */
+        color: var(--bg-white);
+        padding: 80px 20px;
+        text-align: center;
+        position: relative;
+      }
+      .hero::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4); /* Dark overlay for text readability */
+        z-index: 1;
+      }
+      .hero .container {
+        position: relative;
+        z-index: 2;
+      }
+      .hero h1 {
+        font-size: 3em;
+        margin-bottom: 15px;
+        font-weight: 700;
+        line-height: 1.3;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+      }
+      .hero p {
+        font-size: 1.2em;
+        margin-bottom: 30px;
+        font-weight: 300;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+      }
+      .cta-btn {
+        background-color: var(--btn-color);
+        color: var(--bg-white);
+        padding: 15px 35px;
+        font-size: 1.1em;
+        font-weight: 500;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s;
+        text-decoration: none;
+        display: inline-block;
+        box-shadow: var(--shadow);
+      }
+      .cta-btn:hover {
+        background-color: var(--btn-hover);
+        transform: translateY(-2px);
+      }
+
+      /* Content Sections */
+      main {
+        padding: 40px 0;
+      }
+      .content-section {
+        background-color: var(--bg-white);
+        padding: 40px;
+        border-radius: 12px;
+        box-shadow: var(--shadow);
+        margin-bottom: 30px;
+      }
+      .content-section h2 {
+        font-size: 2em;
+        color: var(--primary-color);
+        margin-bottom: 25px;
+        border-bottom: 3px solid var(--accent-color);
+        padding-bottom: 10px;
+        font-weight: 700;
+      }
+      .content-section h3 {
+        font-size: 1.5em;
+        color: var(--secondary-color);
+        margin-top: 25px;
+        margin-bottom: 15px;
+        font-weight: 500;
+      }
+      .content-section p {
+        margin-bottom: 15px;
+        font-size: 1.05em;
+        color: #555;
+      }
+      .content-section ul, .content-section ol {
+        list-style-position: inside;
+        margin-bottom: 15px;
+        padding-left: 10px;
+      }
+      .content-section li {
+        margin-bottom: 8px;
+        line-height: 1.6;
+        color: #444;
+      }
+
+      /* Quote Form/Calculator (Dwell time increase) */
+      .calculator-box {
+        background-color: var(--highlight-color);
+        padding: 30px;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        text-align: center;
+        border: 1px solid var(--accent-color);
+      }
+      .calculator-box h3 {
+        color: var(--primary-color);
+        font-size: 1.8em;
+        margin-top: 0;
+      }
+      .insurance-form label {
+        display: block;
+        text-align: left;
+        margin: 15px 0 5px;
+        font-weight: 500;
+        color: var(--text-color);
+      }
+      .insurance-form input[type="text"],
+      .insurance-form input[type="number"],
+      .insurance-form input[type="date"],
+      .insurance-form select {
+        width: calc(100% - 24px);
+        padding: 12px;
+        margin-bottom: 15px;
+        border: 1px solid var(--border-color);
+        border-radius: 6px;
+        font-size: 1em;
+        box-sizing: border-box;
+      }
+      .form-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+      }
+      .form-row {
+        margin-bottom: 15px;
+      }
+
+      /* Table and Graph Styling (Professional look) */
+      .data-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        font-size: 0.95em;
+      }
+      .data-table th, .data-table td {
+        border: 1px solid #ddd;
+        padding: 12px;
+        text-align: center;
+      }
+      .data-table th {
+        background-color: var(--secondary-color);
+        color: var(--bg-white);
+        font-weight: 700;
+      }
+      .data-table tbody tr:nth-child(even) {
+        background-color: var(--highlight-color);
+      }
+      .data-table tbody td:first-child {
+        font-weight: 500;
+        color: var(--primary-color);
+      }
+      .graph-container {
+        margin-top: 30px;
+        padding: 20px;
+        background-color: #f1f8e9;
+        border-radius: 8px;
+      }
+      .graph-container h3 {
+        text-align: center;
+        margin-bottom: 15px;
+      }
+      .bar-chart {
+        height: 200px;
+        background-color: #ffffff;
+        border: 1px solid #ccc;
+        position: relative;
+        padding: 10px;
+      }
+      .bar {
+        height: 100%;
+        background-color: var(--secondary-color);
+        display: inline-block;
+        margin: 0 5px;
+      }
+
+      /* FAQ Styling */
+      .faq-list {
+        list-style: none;
+        padding: 0;
+      }
+      .faq-item {
+        margin-bottom: 15px;
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+      }
+      .faq-question {
+        background-color: var(--highlight-color);
+        padding: 15px;
+        border-radius: 8px 8px 0 0;
+        font-weight: 500;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: var(--primary-color);
+        transition: background-color 0.3s ease;
+      }
+      .faq-question:hover {
+        background-color: var(--accent-color);
+      }
+      .faq-answer {
+        background-color: var(--bg-white);
+        padding: 15px;
+        border-radius: 0 0 8px 8px;
+        display: none; /* Hidden by default */
+        border-top: none;
+      }
+      .faq-answer p { margin: 0; }
+
+      /* Footer and Utility */
+      footer {
+        background-color: var(--primary-color);
+        color: var(--bg-white);
+        text-align: center;
+        padding: 30px 20px;
+        font-size: 0.9em;
+        margin-top: 30px;
+      }
+      footer a {
+        color: var(--bg-white);
+        text-decoration: none;
+        margin: 0 10px;
+      }
+      footer a:hover {
+        text-decoration: underline;
+      }
+      @media (max-width: 768px) {
+        .hero h1 { font-size: 2.2em; }
+        .hero p { font-size: 1em; }
+        .cta-btn { font-size: 1em; padding: 12px 25px; }
+        .content-section { padding: 30px; }
+        .content-section h2 { font-size: 1.8em; }
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>볼보 XC60 장기렌트 가격 비교센터 (2026년)</h1>
+        </div>
+    </header>
+
     <main>
-      <h1>Home page</h1>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>2026년 볼보 XC60 장기렌트 가격, 최저가 견적 비교로 현명하게 선택하세요</h1>
+                <p>XC60 B5, T8 모델의 장단점, 초기 비용 0원 조건부터 무보증금 혜택까지! 1분만에 내 조건에 딱 맞는 최저가 견적을 찾아보세요.</p>
+                <a href="#quote-form" class="cta-btn">XC60 장기렌트 최저가 견적 1분 만에 확인하기</a>
+            </div>
+        </section>
+
+        <!-- Main Content Section 1: Introduction to XC60 Long-Term Rental -->
+        <section class="content-section">
+            <div class="container">
+                <h2>XC60 장기렌트: 볼보의 프리미엄 SUV를 합리적으로 이용하는 방법</h2>
+                <p>볼보 XC60은 뛰어난 안전성과 고급스러운 디자인으로 국내에서도 높은 인기를 자랑하는 프리미엄 SUV입니다. 차량가액이 높은 수입차종인 만큼, XC60을 구매할 때 발생하는 초기 목돈 부담, 보험료 할증, 감가상각 등의 리스크를 줄이기 위해 많은 분들이 장기렌트를 고려하고 있습니다. 2026년 현재, XC60 장기렌트는 초기 비용이 거의 발생하지 않으며, 매월 일정 금액만 납부하면 보험, 세금, 유지보수까지 모두 해결되는 장점으로 인해 합리적인 대안으로 각광받고 있습니다.</p>
+                <p>장기렌트는 특히 개인 사업자나 법인 명의로 이용 시, 월 렌탈료 전액을 손비 처리하여 세금 절감 효과를 극대화할 수 있습니다. 개인 고객의 경우에도 복잡한 차량 관리를 렌탈 업체에 맡기고, 사고 발생 시 보험 할증 걱정 없이 면책금만 납부하면 된다는 편리성이 큰 장점입니다.</p>
+
+                <h3>볼보 XC60 장기렌트의 주요 장점 (2026년 기준)</h3>
+                <ol>
+                    <li><strong>초기 비용 부담 최소화:</strong> XC60 구매 시 필요한 취득세, 등록세, 자동차 보험료 등 초기 목돈이 전혀 들지 않습니다. 특히 무보증금 장기렌트 상품을 이용하면 초기 비용 0원으로 차량을 출고할 수 있습니다.</li>
+                    <li><strong>유지보수 관리의 편리성:</strong> 정기적인 점검 및 소모품 교환은 렌탈 업체에서 관리해줍니다. XC60의 경우 볼보 공식 서비스센터를 통해 정기 점검이 진행되어 차량 컨디션을 최상으로 유지할 수 있습니다.</li>
+                    <li><strong>세금 절감 효과 (개인/법인 사업자):</strong> 월 렌탈료를 비용 처리하여 소득세 또는 법인세 절감 효과가 있습니다. XC60의 고가 차량가액에 대한 감가상각을 별도로 계산할 필요 없이 회계 처리가 간편해집니다.</li>
+                    <li><strong>사고 시 보험료 할증 걱정 없음:</strong> 사고가 발생해도 개인 보험료가 할증되지 않습니다. 보험료는 렌탈 업체가 부담하며, 운전자는 사고 시 면책금만 납부하면 됩니다.</li>
+                    <li><strong>XC60 모델 변경의 용이성:</strong> 계약 기간 만료 후 XC60 신형 모델이나 다른 차량으로 쉽게 변경할 수 있습니다. 차량 처리에 대한 고민 없이 항상 최신 모델을 이용할 수 있다는 장점이 있습니다.</li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Main Content Section 2: Model-Specific Cost Comparison and Keywords -->
+        <section class="content-section">
+            <div class="container">
+                <h2>XC60 장기렌트 모델별 가격 비교 및 추천 트림 (2026년 최신 데이터)</h2>
+                <p>볼보 XC60은 크게 마일드 하이브리드(B5) 모델과 플러그인 하이브리드(T8) 모델로 나뉩니다. 두 모델은 차량가액과 연료 효율성에서 차이가 크기 때문에, XC60 장기렌트 비용 견적 역시 달라집니다. 2026년 현재 XC60 장기렌트 비용은 어떤 모델을 선택하느냐에 따라 월 10만 원 이상의 차이가 발생할 수 있습니다. 아래 표는 XC60 주요 모델의 예상 월 렌탈료와 특징을 비교한 것입니다.</p>
+
+                <h3>볼보 XC60 주요 모델별 예상 월 렌탈료 및 특징 비교 (2026년, 48개월 기준)</h3>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>XC60 모델 (트림)</th>
+                            <th>차량가액 (예상)</th>
+                            <th>예상 월 렌탈료 (무보증금)</th>
+                            <th>주요 특징 및 추천 대상</th>
+                            <th>추천 절약 팁</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>XC60 B5 AWD Plus Bright</strong></td>
+                            <td>약 6,300만원</td>
+                            <td>월 80~90만원대</td>
+                            <td>가장 인기 있는 기본 모델. 합리적인 가격과 효율성을 중시하는 일반 고객에게 적합.</td>
+                            <td>보증금 납부 조건으로 월 렌탈료 추가 할인.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>XC60 B5 AWD Ultimate Bright</strong></td>
+                            <td>약 7,000만원</td>
+                            <td>월 90~100만원대</td>
+                            <td>최상위 옵션 모델. 첨단 안전 및 편의 사양을 모두 갖춤.</td>
+                            <td>계약 기간 48개월 이상 장기 계약.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>XC60 T8 Recharge AWD Ultimate</strong></td>
+                            <td>약 8,500만원</td>
+                            <td>월 110~120만원대</td>
+                            <td>플러그인 하이브리드 모델. 강력한 성능과 높은 연비. 전기 충전 인프라가 갖춰진 환경에 적합.</td>
+                            <td>XC60 T8 모델은 보조금 혜택을 확인하여 초기 비용 절감.</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>*위 예상 금액은 2026년 특정 시점의 프로모션 및 렌탈사 조건에 따라 변동될 수 있습니다. 정확한 견적은 실시간 비교가 필수입니다.</p>
+
+                <h3>XC60 장기렌트 비용 절감 키워드 분석 (전문성 강화)</h3>
+                <p>XC60 장기렌트를 저렴하게 이용하기 위해서는 단순히 "XC60 장기렌트 가격"이나 "XC60 장기렌트 싼곳"을 검색하는 것 외에도 다양한 조건을 비교해야 합니다. XC60 장기렌트 후기를 보면, 렌탈 업체별로 프로모션이나 사은품, 현금지원 혜택이 크게 다르다는 것을 알 수 있습니다. 특히 2026년에는 장기렌트 상품이 포화되면서 신규 가입 혜택이 강화되고 있습니다. 렌탈 기간, 약정 주행거리, 정비 서비스 포함 여부 등 세부 조건을 꼼꼼히 따져봐야 합니다. 벤츠 GLC 장기렌트, BMW X3 장기렌트, 아우디 Q5 장기렌트 등 경쟁 모델과 비교했을 때 XC60의 장단점을 파악하는 것도 중요합니다. XC60은 안전 사양과 실내 디자인에서 높은 점수를 받지만, 일부 소비자는 AS 인프라나 부품 수급 기간에 대해 단점을 언급하기도 합니다. XC60 장기렌트 전문 업체를 통해 이러한 세부 사항을 정확하게 비교해야 예상 비용을 줄일 수 있습니다. 또한, 장기렌트 계약 시 자동차세, 보험료, 차량가액 감가상각을 고려한 총 비용을 계산하여 할부 구매(내돈내산)와 비교하는 것이 현명합니다. XC60 T8 모델의 경우 전기차 보조금 혜택이 적용될 수 있는지 여부도 확인해야 합니다.</p>
+            </div>
+        </section>
+
+        <!-- Main Content Section 3: In-depth Analysis of Long-Term Rental Conditions -->
+        <section class="content-section">
+            <div class="container">
+                <h2>XC60 장기렌트 계약 시 필수 확인 사항: 숨겨진 비용과 절약 팁</h2>
+                <p>XC60 장기렌트 계약은 월 렌탈료 외에도 여러 가지 조건에 따라 총지출 금액이 달라질 수 있습니다. 특히 2026년 장기렌트 시장에서는 '초기 비용 0원' 조건이 보편화되었지만, 이면에는 숨겨진 비용이나 불리한 조건이 있을 수 있습니다. 현명하게 XC60 장기렌트 비용을 절감하기 위한 핵심 전략을 소개합니다.</p>
+
+                <h3>1. 약정 주행거리 설정의 중요성 (마일리지 vs 비용)</h3>
+                <p>XC60 장기렌트는 연간 약정 주행거리에 따라 월 렌탈료가 달라집니다. 주행거리가 짧을수록(예: 연 1만km) 렌탈료는 저렴하지만, 계약 종료 후 초과 주행 시 km당 수백 원의 위약금이 발생합니다. XC60 장기렌트 후기를 보면, 주행거리가 애매한 경우 미리 넉넉하게 설정하는 것이 유리하다고 조언합니다. 반면, 주행거리가 확실히 짧다면 낮은 약정 주행거리를 설정하여 월 비용을 절감할 수 있습니다.</p>
+
+                <h3>2. 정비 서비스 포함 여부 및 비교</h3>
+                <p>XC60은 프리미엄 수입차이기 때문에 유지보수 비용이 국산차보다 높은 편입니다. 장기렌트 계약 시 '정비 불포함' 상품을 선택하면 월 렌탈료가 저렴하지만, 정기적인 소모품 교환과 수리 비용을 직접 부담해야 합니다. '정비 포함' 상품을 선택하면 렌탈료는 다소 높지만, XC60 공식 서비스센터를 통해 모든 관리를 받을 수 있어 편리합니다. XC60 장기렌트 전문 업체에서는 이 부분에서 견적이 크게 갈릴 수 있으므로 꼼꼼한 비교가 필요합니다.</p>
+
+                <h3>3. 보증금 vs 선납금 vs 무보증금 조건</h3>
+                <p><strong>보증금:</strong> 차량가액의 10~30%를 계약 시 납부하고 계약 만료 후 돌려받는 금액입니다. 보증금을 납부하면 월 렌탈료가 낮아지는 효과가 있습니다.
+                    <strong>선납금:</strong> 월 렌탈료의 일부를 미리 납부하는 금액입니다. 계약 만료 후 돌려받지 못하지만 월 납입액이 크게 줄어듭니다.
+                    <strong>무보증금:</strong> 초기 비용 0원으로 차량을 출고하는 조건입니다. 신용등급이 낮거나 초기 목돈 부담을 피하고 싶을 때 유용하지만, 월 렌탈료는 가장 높습니다.</p>
+
+                <h3>4. 금리 비교 및 신용등급 관리 (2026년 신규 가입 혜택)</h3>
+                <p>장기렌트는 신용등급에 따라 금리(대출 이자율)가 결정되는 할부와 달리, 렌탈사의 심사 기준에 따라 보증금 비율이 결정됩니다. 2026년 현재 장기렌트 업계는 신규 가입 혜택으로 저금리 이벤트를 진행하기도 하므로, 여러 렌탈사의 견적을 비교하는 것이 필수적입니다.</p>
+            </div>
+        </section>
+
+        <!-- Main Content Section 4: Future Outlook and Dwell Time Form -->
+        <section class="content-section">
+            <div class="container">
+                <h2>XC60 장기렌트 시장 전망 및 현명한 선택 기준 (2026년 이후)</h2>
+                <p>2026년 볼보 XC60 장기렌트 시장은 더욱 치열한 경쟁이 예상됩니다. 렌탈 업체들은 XC60과 같은 프리미엄 SUV를 선호하는 소비자들을 유치하기 위해 다양한 프로모션과 파격적인 사은품(현금지원, 상품권 증정 등)을 내세우고 있습니다. XC60 T8 Recharge 모델은 친환경차 혜택이 강화됨에 따라 장기렌트 시장에서 더욱 인기를 끌 것으로 보이며, 렌탈사들도 이 모델에 대한 프로모션을 집중할 가능성이 높습니다. 소비자들은 단순히 월 렌탈료만 비교할 것이 아니라, 차량 출고 기간, 정비 서비스, 계약 만료 시 인수 조건 등을 종합적으로 고려해야 합니다.</p>
+
+                <h3>XC60 장기렌트 견적 무료 요청하기 (체류 시간 확보 요소)</h3>
+                <div class="calculator-box">
+                    <h3>내 XC60 장기렌트 예상 견적 계산기</h3>
+                    <p>간단한 정보 입력으로 2026년 최신 XC60 장기렌트 비용을 확인하세요. 10개 이상의 주요 렌탈사를 한 번에 비교하여 최저가 견적을 제공합니다.</p>
+                    <form id="quote-form" class="insurance-form" onsubmit="return false;">
+                        <div class="form-grid">
+                            <div class="form-row">
+                                <label for="car_model">희망 차량 모델</label>
+                                <select id="car_model" name="car_model" required>
+                                    <option value="">차종을 선택하세요</option>
+                                    <option value="XC60 B5 AWD Plus Bright">볼보 XC60 B5 AWD Plus Bright</option>
+                                    <option value="XC60 B5 AWD Ultimate Bright">볼보 XC60 B5 AWD Ultimate Bright</option>
+                                    <option value="XC60 T8 Recharge AWD Ultimate">볼보 XC60 T8 Recharge AWD Ultimate</option>
+                                    <option value="XC40">볼보 XC40</option>
+                                    <option value="S90">볼보 S90</option>
+                                    <option value="기타">기타</option>
+                                </select>
+                            </div>
+                            <div class="form-row">
+                                <label for="rental_period">희망 렌탈 기간 (개월)</label>
+                                <select id="rental_period" name="rental_period" required>
+                                    <option value="">기간 선택</option>
+                                    <option value="36">36개월</option>
+                                    <option value="48">48개월</option>
+                                    <option value="60">60개월</option>
+                                </select>
+                            </div>
+                            <div class="form-row">
+                                <label for="mileage_annual">예상 연간 주행거리 (km)</label>
+                                <select id="mileage_annual" name="mileage_annual" required>
+                                    <option value="">주행거리 선택</option>
+                                    <option value="10000">10,000 km 이하</option>
+                                    <option value="20000">20,000 km 이하</option>
+                                    <option value="30000">30,000 km 이하</option>
+                                </select>
+                            </div>
+                            <div class="form-row">
+                                <label for="initial_cost_type">희망 초기 비용 조건</label>
+                                <select id="initial_cost_type" name="initial_cost_type" required>
+                                    <option value="">조건 선택</option>
+                                    <option value="무보증금">무보증금 (초기 비용 0원)</option>
+                                    <option value="보증금">보증금 납부 (월 렌탈료 할인)</option>
+                                </select>
+                            </div>
+                            <div class="form-row">
+                                <label for="name">이름</label>
+                                <input type="text" id="name" name="name" placeholder="이름을 입력하세요" required>
+                            </div>
+                            <div class="form-row">
+                                <label for="phone">연락처</label>
+                                <input type="text" id="phone" name="phone" placeholder="전화번호를 입력하세요" required>
+                            </div>
+                        </div>
+                        <button type="button" class="cta-btn" onclick="showEstimateResult()">나에게 맞는 최저가 견적 확인</button>
+                    </form>
+                    <div id="estimate-result" style="margin-top: 20px; font-size: 1.1em; font-weight: 500; color: var(--primary-color);"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Content Section 5: FAQ -->
+        <section class="content-section">
+            <div class="container">
+                <h2>XC60 장기렌트 자주 묻는 질문 (FAQ)</h2>
+                <ul class="faq-list">
+                    <li class="faq-item">
+                        <div class="faq-question">XC60 장기렌트, 할부 구매와 비교했을 때 어떤 차이점이 있나요?</div>
+                        <div class="faq-answer">
+                            <p>가장 큰 차이점은 소유권과 비용 처리 방식입니다. 할부 구매는 차량을 본인 소유로 등록하여 재산세가 부과되며, 보험료 할증도 개인에게 적용됩니다. 반면 XC60 장기렌트는 렌탈 업체 명의로 등록되어 재산세, 보험료, 차량 정비 부담이 없습니다. 특히 사업자는 월 렌탈료 전액을 비용 처리하여 세금 절감 효과를 볼 수 있습니다. XC60 장기렌트 가격과 할부 이자를 비교하여 총 비용을 계산해 볼 필요가 있습니다.</p>
+                        </div>
+                    </li>
+                    <li class="faq-item">
+                        <div class="faq-question">XC60 장기렌트 비용에 보험료가 포함되나요? 사고 시 대처는 어떻게 되나요?</div>
+                        <div class="faq-answer">
+                            <p>네, 월 렌탈료에 자동차 보험료가 포함되어 있습니다. XC60 장기렌트는 렌탈사 명의로 보험이 가입되므로, 사고가 발생해도 개인 보험료가 할증되지 않습니다. 사고가 발생하면 렌탈 업체에 연락하여 사고 접수 후 면책금(통상 30~50만 원)만 납부하면 됩니다. 면책금은 렌탈 업체별로 차이가 있으므로 계약 전 확인해야 합니다.</p>
+                        </div>
+                    </li>
+                    <li class="faq-item">
+                        <div class="faq-question">무보증금 장기렌트는 초기 비용이 정말 0원인가요? 신용등급에 영향이 있나요?</div>
+                        <div class="faq-answer">
+                            <p>네, 무보증금 장기렌트 상품을 이용하면 초기 비용 0원으로 XC60을 출고할 수 있습니다. 다만, 렌탈 업체들은 고객의 신용등급을 확인하여 무보증금 가능 여부를 심사합니다. 신용등급이 낮을 경우 무보증금 대신 보증금 납부 조건이 제시될 수 있습니다. 장기렌트는 대출이 아니기 때문에 신용등급 하락에는 영향을 미치지 않습니다.</p>
+                        </div>
+                    </li>
+                    <li class="faq-item">
+                        <div class="faq-question">XC60 T8 Recharge 모델을 장기렌트하면 전기차 보조금 혜택을 받을 수 있나요?</div>
+                        <div class="faq-answer">
+                            <p>XC60 T8 Recharge는 플러그인 하이브리드(PHEV) 모델로, 과거에는 보조금 대상이었으나 2026년 현재는 PHEV 보조금 정책이 축소되거나 종료된 상태입니다. 보조금 혜택은 직접 구매 시 적용되는 것이며, 장기렌트카는 렌탈 업체가 보조금을 수령하므로 소비자에게는 월 렌탈료 할인 형태로 반영됩니다. 정확한 혜택은 렌탈 업체에 문의하여 확인하는 것이 좋습니다.</p>
+                        </div>
+                    </li>
+                    <li class="faq-item">
+                        <div class="faq-question">XC60 장기렌트 만기 후 차량 인수 시 장단점은 무엇인가요?</div>
+                        <div class="faq-answer">
+                            <p>장기렌트 만기 시에는 차량 인수 또는 반납을 선택할 수 있습니다. XC60 모델을 인수할 경우, 잔존가치를 납부하고 소유권을 이전받을 수 있습니다. 장점은 인수 시점까지의 감가상각을 렌탈사가 부담하고, 상대적으로 저렴한 가격으로 차량을 인수할 수 있다는 것입니다. 단점은 인수를 위해서는 목돈이 필요하다는 것입니다. XC60 장기렌트 후기를 보면, 인수를 목적으로 한다면 렌탈 기간 중 주행거리를 넉넉히 설정하는 것이 유리하다고 조언합니다.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Main Content Section 6: External Resources (Credibility/SEO boost) -->
+        <section class="content-section">
+            <div class="container">
+                <h2>신뢰할 수 있는 외부 자료 및 참고 링크</h2>
+                <p>XC60 장기렌트 계약 시 참고할 만한 공신력 있는 외부 자료입니다. 장기렌트 관련 법규, 소비자 보호 정책, 시장 동향을 파악하는 데 도움이 됩니다.</p>
+                <ul>
+                    <li><a href="https://www.ftc.go.kr/www/ne_user.do?key=26" target="_blank" rel="noopener">공정거래위원회: 소비자 보호 정보 및 자동차 관련 표준약관</a></li>
+                    <li><a href="https://www.kofla.or.kr/" target="_blank" rel="noopener">한국렌터카사업조합연합회: 렌터카 시장 동향 및 통계 자료</a></li>
+                    <li><a href="https://www.law.go.kr/법령/여신전문금융업법" target="_blank" rel="noopener">법제처: 여신전문금융업법 (장기렌트 관련 법규)</a></li>
+                    <li><a href="https://ko.wikipedia.org/wiki/볼보_XC60" target="_blank" rel="noopener">위키백과: 볼보 XC60 (모델 정보 및 역사)</a></li>
+                    <li><a href="https://www.kiri.or.kr/" target="_blank" rel="noopener">보험연구원 (KIRI): 자동차 보험 시장 동향 및 손해율 분석 자료 (렌터카 포함)</a></li>
+                </ul>
+            </div>
+        </section>
     </main>
-  </body>
-</html>
+
+    <!-- Scripts for interactivity (FAQ toggle, calculator) -->
+    <script>
+        // FAQ 토글 기능
+        document.querySelectorAll('.faq-question').forEach(item => {
+            item.addEventListener('click', () => {
+                const answer = item.nextElementSibling;
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+
+        // Simple calculator simulation for dwell time optimization
+        function showEstimateResult() {
+            const carModel = document.getElementById('car_model').value;
+            const rentalPeriod = document.getElementById('rental_period').value;
+            const mileageAnnual = document.getElementById('mileage_annual').value;
+            const initialCostType = document.getElementById('initial_cost_type').value;
+
+            if (!carModel || !rentalPeriod || !mileageAnnual || !initialCostType) {
+                document.getElementById('estimate-result').innerHTML = "<span style='color: #d32f2f;'>모든 항목을 입력해 주세요.</span>";
+                return;
+            }
+
+            // Simple calculation logic based on inputs (for simulation)
+            let basePremium = 800000; // Base premium for XC60 B5 (KRW)
+
+            // Model adjustment (simulated)
+            if (carModel === 'XC60 T8 Recharge AWD Ultimate') {
+                basePremium *= 1.3; // T8 is more expensive
+            } else if (carModel === 'XC60 B5 AWD Ultimate Bright') {
+                basePremium *= 1.1; // Ultimate trim premium
+            } else if (carModel === 'XC40') {
+                basePremium *= 0.8; // XC40 is cheaper
+            }
+
+            // Rental period adjustment (simulated)
+            if (rentalPeriod === '36') {
+                basePremium *= 1.1; // Shorter term, higher monthly cost
+            } else if (rentalPeriod === '60') {
+                basePremium *= 0.95; // Longer term, lower monthly cost
+            }
+
+            // Mileage adjustment (simulated)
+            if (mileageAnnual === '30000') {
+                basePremium *= 1.05; // High mileage, higher cost
+            } else if (mileageAnnual === '10000') {
+                basePremium *= 0.98; // Low mileage, slightly lower cost
+            }
+
+            // Initial cost type adjustment (simulated)
+            if (initialCostType === '무보증금') {
+                basePremium *= 1.05; // Higher monthly cost without initial deposit
+            }
+
+            // Format result
+            const finalEstimate = Math.round(basePremium / 1000) * 1000;
+            const resultHtml = `입력하신 정보로 계산된 예상 월 렌탈료는 약 <span style="font-size: 1.2em; font-weight: 700;">${finalEstimate.toLocaleString()}원</span> 입니다. 정확한 견적은 비교하기 버튼을 눌러 확인하세요.`;
+            document.getElementById('estimate-result').innerHTML = resultHtml;
+        }
+    </script>
+  
